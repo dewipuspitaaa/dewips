@@ -13,7 +13,7 @@
         <meta name="description" content="Komputasi Numerik">
       
       
-        <link rel="canonical" href="https://dewipuspitaaa.github.io/dewips/tugas2/">
+        <link rel="canonical" href="https://dewipuspitaaa.github.io/dewips/Persamaan Non Linier/">
       
       
         <meta name="author" content="Dewi Puspita Sari">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Metode Raphson - (180411100113) Dewi Puspita Sari</title>
+        <title>Persamaan Non Linier - (180411100113) Dewi Puspita Sari</title>
       
     
     
@@ -144,7 +144,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Metode Raphson
+                Persamaan Non Linier
               
             </span>
           
@@ -277,6 +277,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../tugas2/" title="Metode Raphson" class="md-nav__link">
+      Metode Raphson
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -288,11 +300,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Metode Raphson
+        Persamaan Non Linier
       </label>
     
-    <a href="./" title="Metode Raphson" class="md-nav__link md-nav__link--active">
-      Metode Raphson
+    <a href="./" title="Persamaan Non Linier" class="md-nav__link md-nav__link--active">
+      Persamaan Non Linier
     </a>
     
       
@@ -312,13 +324,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#penjelasan" class="md-nav__link">
-    Penjelasan
-  </a>
-  
-</li>
-      
       
       
       
@@ -327,18 +332,6 @@
   
 </nav>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../Persamaan Non Linier/" title="Persamaan Non Linier" class="md-nav__link">
-      Persamaan Non Linier
-    </a>
   </li>
 
     
@@ -381,13 +374,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#penjelasan" class="md-nav__link">
-    Penjelasan
-  </a>
-  
-</li>
-      
       
       
       
@@ -404,7 +390,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/dewipuspitaaa/dewips/edit/master/docs/tugas2.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/dewipuspitaaa/dewips/edit/master/docs/Persamaan Non Linier.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                 <h1 id="fungsi-persamaan-non-linier-dengan-metode-newton-raphson">Fungsi Persamaan Non Linier dengan Metode Newton Raphson<a class="headerlink" href="#fungsi-persamaan-non-linier-dengan-metode-newton-raphson" title="Permanent link">&para;</a></h1>
@@ -429,53 +415,24 @@ $$</p>
 <p>Metode newton raphson adalah metode pendekatan yang menggunakan satu titik awal dan mendekatinya dengan memperhatikan slope atau gradien pada titik tersebut.</p>
 <p>Algoritma Metode Newton Raphson</p>
 <ul>
-<li>
-<p>Mendefinisikan fungsi <em>f(x) dan f1(x)</em></p>
-</li>
-<li>
-<p>Menentukan toleransi error (e) dan iterasi maksimum (<em>n</em>)</p>
-</li>
-<li>
-<p>Menentukan nilai pendekatan awal <em>x0</em></p>
-</li>
-<li>
-<p>Menghitung <em>f(x0)</em> dan <em>f1(x0)</em></p>
-</li>
-<li>
-<p>Untuk iterasi <em>I= 1</em> atau <em>|f(xi)|≥ e,</em> akar persamaan adalah nilai xi yang terakhir diperoleh.
-  $$
-  x_{n+1} = x_{n} + \frac{F(x_{n})}{F^{1}(x_{n})}
-  $$</p>
-</li>
+<li>Mendefinisikan fungsi <em>f(x) dan f1(x)</em></li>
+<li>Menentukan toleransi error (e) dan iterasi maksimum (<em>n</em>)</li>
+<li>Menentukan nilai pendekatan awal <em>x0</em></li>
+<li>Menghitung <em>f(x0)</em> dan <em>f1(x0)</em></li>
+<li>Untuk iterasi <em>I= 1</em> atau <em>|f(xi)|≥ e,</em> akar persamaan adalah nilai xi yang terakhir diperoleh.</li>
 </ul>
 <p>Algoritma Metode Newton Raphson dengan modifikasi tabel :</p>
 <ul>
-<li>
-<p>Mendefinisikan fungsi <em>F(x)</em></p>
-</li>
-<li>
-<p>Mengambil range nilai x =[<em>a</em>,<em>b</em>] dengan jumlah pembagi <em>n</em></p>
-</li>
-<li>
-<p>Memasukkan torelansi error (<em>e</em>) dan masukkan iterasi <em>n</em></p>
-</li>
-<li>
-<p>Menggunakan algoritma tabel diperoleh titik pendekatan awal <em>x0</em> dari : <em>F(xk) . F(xk+1)&lt;0</em>maka <em>x0 = xk</em></p>
-</li>
-<li>
-<p>Hitung <em>F(x0) dan F1(x0)</em></p>
-</li>
-<li>
-<p>Bila <em>F</em>(<em>abs</em>(<em>F</em> (<em>x</em>0 )))&lt; e<em>,maka pendekatan awal </em>x0<em> digeser sebesar </em>dx<em> (dimasukkan) </em>x0 = x0 + dx<em>, hitung </em>F(x0)<em> dan </em>F1(x0)*</p>
-</li>
-<li>
-<p>Untuk iterasi <em>I= 1</em> atau <em>|F(xi)|≥ e</em></p>
-</li>
-<li>
-<p>Akar persamaan adalah <em>x</em> terakhir yang diperoleh.</p>
-</li>
+<li>Mendefinisikan fungsi <em>F(x)</em></li>
+<li>Mengambil range nilai x =[<em>a</em>,<em>b</em>] dengan jumlah pembagi <em>n</em></li>
+<li>Memasukkan torelansi error (<em>e</em>) dan masukkan iterasi <em>n</em></li>
+<li>Menggunakan algoritma tabel diperoleh titik pendekatan awal <em>x0</em> dari : <em>F(xk) . F(xk+1)&lt;0</em>maka <em>x0 = xk</em></li>
+<li>Hitung <em>F(x0) dan F1(x0)</em></li>
+<li>Bila <em>F</em>(<em>abs</em>(<em>F</em> (<em>x</em>0 )))&lt; e<em>,maka pendekatan awal </em>x0<em> digeser sebesar </em>dx<em> (dimasukkan) </em>x0 = x0 + dx<em>, hitung </em>F(x0)<em> dan </em>F1(x0)*</li>
+<li>Untuk iterasi <em>I= 1</em> atau <em>|F(xi)|≥ e</em></li>
+<li>Akar persamaan adalah <em>x</em> terakhir yang diperoleh.</li>
 </ul>
-<p>#### Implementasi</p>
+<p>Implementasi</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 <span class="n">e</span> <span class="o">=</span> <span class="mf">2.71828</span>
 
@@ -516,20 +473,6 @@ $$</p>
 <span class="n">Iterasi</span> <span class="n">ke</span> <span class="o">=</span>  <span class="mi">3</span> <span class="p">,</span> <span class="n">x</span> <span class="o">=</span>  <span class="mf">0.35724635301940616</span> <span class="p">,</span> <span class="n">f</span><span class="p">(</span> <span class="mf">0.35724635301940616</span> <span class="p">)</span> <span class="o">=</span>  <span class="mf">0.0004022049593612742</span> <span class="p">,</span> <span class="n">selisih</span> <span class="o">=</span>  <span class="mf">0.0001</span>
 <span class="n">Toleransi</span> <span class="n">tidak</span> <span class="n">terpenuhi</span>
 </pre></div>
-
-
-<h4 id="penjelasan">Penjelasan<a class="headerlink" href="#penjelasan" title="Permanent link">&para;</a></h4>
-<ol>
-<li>Importh Library math</li>
-<li>karena kita menggunakan contoh fungsi <em>f(x)=ex−4Xf(x)=ex−4X</em> maka kita membuat sebuah fungsi yang sesuai , dan juga fungsi turunannya yaitu <em>f′(x)=ex−4f′(x)=ex−4</em></li>
-<li>Membuat sebuah inputan untuk X , Error / Epsilon , serta Maksimal perulangan untuk stopping condition</li>
-<li>lalu deklarasikan iterasi = 0 untuk perulangan yang ke 0 nantinya dan akan ditambah setiap kali perulangan</li>
-<li>deklarasikan selisih untuk <em>xb−x0xb−x0</em> untuk perbandingan</li>
-<li>lakukan perulangan dengan kondisi iterasi kurang dari sama dengan inputan maksimal iterasi dan selisih lebih dari error / epsilon</li>
-<li>hitung <em>xbxb</em> dengan rumus yang sudah kita dapatkan sebelumnya</li>
-<li>lalu lakukan perbandingan jika mencapai nilai <em>True</em> maka toleransi tidak terpenuhi namun perulangan sudah mencapai batas</li>
-<li>jika pengecekan selisih &gt; error bernilai bernilai <em>True</em> maka toleransi akan terpenuhi dengan nilai error serta fungsi x pada iterasi ke n</li>
-</ol>
                 
                   
                 
@@ -550,7 +493,7 @@ $$</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../tugas1/" title="MacLaurin" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../tugas2/" title="Metode Raphson" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -559,19 +502,19 @@ $$</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                MacLaurin
+                Metode Raphson
               </span>
             </div>
           </a>
         
         
-          <a href="../Persamaan Non Linier/" title="Persamaan Non Linier" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../tugas4/" title="Rekursive Trapezoid" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Persamaan Non Linier
+                Rekursive Trapezoid
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
